@@ -1,0 +1,20 @@
+.ff-serif{ font-family: var(--ff-serif);}
+.ff-cursive{ font-family: var(--ff-cursive);}
+
+.text-dark {color: alpha(var(--clr-dark-dark), 1.0);}
+.text-light {color: alpha(var(--clr-light), 1.0);}
+.text-dark-light {color: alpha(var(--clr-dark), 0.7);}
+
+.fs-900 {font-size: var(--fs-900);}
+.fs-800 {font-size: var(--fs-800);}
+.fs-700 {font-size: var(--fs-700);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-500 {font-size: var(--fs-500);}
+
+.letter-spacing-1{ letter-spacing: 5%;}
+.letter-spacing-2{ letter-spacing: 3%;}
+.letter-spacing-3{ letter-spacing: 2%;}
+
+.fw-regular { font-weight: 400;}
+.fw-bold {font-weight: 700;}
+
