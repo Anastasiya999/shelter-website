@@ -1,7 +1,9 @@
-@import 'abstracts/mixins';
-@import 'abstracts/functions';
-@import 'abstracts/variables';
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "abstracts/variables";
 
-@import 'core/reset';
-@import 'core/colors';
-@import 'core/typography';
+@import "base/reset";
+@import "base/colors";
+@import "base/typography";
+
+@import "layout/utilities";

@@ -8,7 +8,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Reset margins */
@@ -21,7 +21,7 @@ h5,
 p,
 figure,
 picture {
-    margin: 0; 
+  margin: 0;
 }
 
 h1,
@@ -31,43 +31,43 @@ h4,
 h5,
 h6,
 p {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 /* set up the body */
-.page-common{
-    z-index: -1;
-    position: absolute;
-    inset: 0 0;
-    width: 100%;
+.page-common {
+  z-index: -1;
+  position: absolute;
+  inset: 0 0;
+  width: 100%;
 
-    font-family: var(--ff-sans-normal);
-    font-size: var(--fs-400);
-    color: alpha(var(--clr-white), 1.0);
-    
-    line-height: 1.5;
-    min-height: 100vh;
-    
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    grid-template-rows: 1fr;
-    
-    overflow-x: hidden;
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: alpha(var(--clr-white), 1);
 
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    
-    @media (min-width: 45rem) {
-        overflow: hidden;
-    }
+  line-height: 1.5;
+  min-height: 100vh;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: 1fr;
+
+  overflow-x: hidden;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media (min-width: 45rem) {
+    overflow: hidden;
+  }
 }
 /* make images easier to work with */
 img,
-picutre {
-    max-width: 100%;
-    display: block;
+picture {
+  max-width: 100%;
+  display: block;
 }
 
 /* make form elements easier to work with */
@@ -75,11 +75,19 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
 }
 
 /* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {  
+@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
@@ -89,4 +97,3 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
