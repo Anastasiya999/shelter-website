@@ -1,5 +1,7 @@
 .nav {
+  z-index: 1000;
   position: fixed;
+  top: 0;
   min-height: 10vh;
   width: 100%;
 
@@ -36,6 +38,7 @@
 
   .nav_menu_expanded {
     ul {
+      background-color: white;
       flex-direction: column;
       margin: 0;
       padding-inline: 2em;

@@ -4,7 +4,7 @@ import SupportSection from "../SupportSection";
 
 const Main = () => {
   return (
-    <div>
+    <div className="container">
       <PetSection />
       <SupportSection />
     </div>
