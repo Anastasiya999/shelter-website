@@ -5,7 +5,11 @@ import hero from "../../assets/hero_img.jpg";
 const HeroSection = () => {
   return (
     <div className={["container", styles.hero_container].join(" ")}>
-      <div className="socia_media">Social media</div>
+      <div className={["flex", styles.social_media].join(" ")}>
+        <span>Instagram</span>
+        <span>Twitter</span>
+        <span>Facebook</span>
+      </div>
       <div className={["flex", styles.hero].join(" ")}>
         <div className={["flex", styles.hero_description].join(" ")}>
           <p className="ff-cursive fs-900 letter-spacing-1 uppercase">

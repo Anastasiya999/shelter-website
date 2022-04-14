@@ -20,9 +20,6 @@
 
   flex-direction: column;
 
-  .hero_description_main {
-  }
-
   button {
     align-self: center;
     max-width: 10em;
@@ -49,6 +46,10 @@
 
 .social_media {
   position: absolute;
+  top: 20%;
+  left: -5rem;
+  flex-direction: row;
+  transform: rotate(-90deg);
 }
 
 @media (min-width: 35rem) {
@@ -73,5 +74,9 @@
 
   .hero_description_main {
     max-width: 20vw;
+  }
+
+  .social_media {
+    top: 40%;
   }
 }

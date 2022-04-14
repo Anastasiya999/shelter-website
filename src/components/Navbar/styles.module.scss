@@ -31,9 +31,6 @@
     a:hover {
       cursor: pointer;
     }
-    @media (max-width: 35rem) {
-      display: none;
-    }
   }
 
   .nav_menu_expanded {
@@ -46,7 +43,8 @@
       align-items: center;
       position: absolute;
       top: 10vh;
-      left: 0;
+      right: 0;
+      transition: right 2s;
 
       width: 100%;
       height: 90vh;
@@ -56,8 +54,20 @@
         min-height: 10vh;
       }
     }
-    @media (min-width: 35rem) {
-      display: none;
+  }
+}
+
+@media (max-width: 35rem) {
+  .nav_menu {
+    display: none;
+  }
+}
+
+@media (min-width: 35rem) {
+  .nav_menu_expanded {
+    ul {
+      right: -100%;
     }
+    display: none;
   }
 }
