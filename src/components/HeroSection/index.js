@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import hero from "../../assets/hero_img.jpg";
+import ActionButton from "./ActionButton";
 
 const HeroSection = () => {
   return (
-    <div className={["container", styles.hero_container].join(" ")}>
-      <div className={["flex", styles.social_media].join(" ")}>
+    <div className={styles.hero_container}>
+      <div className={styles.social_media}>
         <span>Instagram</span>
         <span>Twitter</span>
         <span>Facebook</span>
       </div>
-      <div className={["flex", styles.hero].join(" ")}>
-        <div className={["flex", styles.hero_description].join(" ")}>
+      <div className={styles.hero}>
+        <div className={styles.hero_description}>
           <p className="ff-cursive fs-900 letter-spacing-1 uppercase">
             find new <br /> friend
           </p>
@@ -26,9 +27,9 @@ const HeroSection = () => {
             humour, or randomised words which don't look even slightly
             believable.
           </p>
-          <button>Make a friend</button>
+          <ActionButton>Make a friend</ActionButton>
         </div>
-        <div className={["flex", styles.hero_img].join(" ")}>
+        <div className={styles.hero_img}>
           <img src={hero}></img>
         </div>
       </div>

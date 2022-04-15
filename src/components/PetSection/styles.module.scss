@@ -1,5 +1,13 @@
 .pet_section {
-  margin-top: 10vh;
+  margin-top: 1rem;
   width: 100%;
   min-height: 70vh;
+  padding-top: 5%;
+  padding-inline: 10%;
+}
+
+@media (min-width: 58rem) {
+  .pet_section {
+    padding-inline: 20%;
+  }
 }
