@@ -7,12 +7,38 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cart from "../Cart";
 
-const CustomSlider = () => {
-  const renderSlides = () => [1, 2, 3, 4, 5, 6, 7, 8].map((num) => <Cart />);
+const CustomSlider = ({ data }) => {
+  const settings = {
+    dots: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  };
+  const renderSlides = () =>
+    data.map((item) => <Cart key={item.id} item={item} />);
   return (
-    <Slider dots={false} slidesToShow={1} slidesToScroll={1}>
-      {renderSlides()}
-    </Slider>
+    <div className={styles.slides_wrapper}>
+      <Slider {...settings}>{renderSlides()}</Slider>
+    </div>
   );
 };
 

@@ -1,0 +1,27 @@
+.title {
+  background-image: url(../../assets/our_friends.png);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  width: 263px;
+  height: 118px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 92%;
+
+  font-family: var(--ff-cursive);
+  font-size: var(--fs-800);
+  letter-spacing: 5%;
+}
+
+.bg_reversed {
+  transform: scaleY(-1);
+
+  p {
+    transform: scaleY(-1);
+  }
+}
