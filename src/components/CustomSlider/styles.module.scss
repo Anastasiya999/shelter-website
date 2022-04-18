@@ -1,3 +1,19 @@
 .slides_wrapper {
   min-height: 495px;
 }
+
+.slick-next {
+  background: url(../../assets/our_friends.png) center center no-repeat !important;
+
+  &::before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  background: url(../../assets/our_friends.png) center center no-repeat !important;
+
+  &::before {
+    display: none;
+  }
+}

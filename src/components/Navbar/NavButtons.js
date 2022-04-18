@@ -6,13 +6,13 @@ const NavButton = ({ onToggleMenu }) => {
   return (
     <div className={["flex", styles.nav_buttons].join(" ")}>
       <span>
-        <i class="bx bx-bookmark"></i>
+        <i className="bx bx-bookmark"></i>
       </span>
       <span>
-        <i class="bx bx-moon"></i>
+        <i className="bx bx-moon"></i>
       </span>
       <span className={styles.menu_btn} onClick={onToggleMenu}>
-        <i class="bx bx-menu-alt-right"></i>
+        <i className="bx bx-menu-alt-right"></i>
       </span>
     </div>
   );

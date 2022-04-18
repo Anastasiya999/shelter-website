@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cart from "../Cart";
 
+import Arrow from "./Arrow";
+
 const CustomSlider = ({ data }) => {
   const settings = {
     dots: false,
@@ -14,6 +16,8 @@ const CustomSlider = ({ data }) => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    nextArrow: <Arrow type="next" />,
+    prevArrow: <Arrow type="prev" />,
     responsive: [
       {
         breakpoint: 1024,

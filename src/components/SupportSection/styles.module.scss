@@ -1,0 +1,22 @@
+.support_section {
+  display: flex;
+  justify-content: center;
+}
+
+.support_card {
+  padding: 1em;
+  width: 20vw;
+  background-size: 10%;
+  background-position: center;
+
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 30%;
+    height: auto;
+  }
+  p {
+    align-self: center;
+  }
+}

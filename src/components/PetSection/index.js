@@ -1,7 +1,7 @@
 import React from "react";
 import CustomSlider from "../CustomSlider";
 import styles from "./styles.module.scss";
-import dogs from "../../data";
+import { dogs } from "../../data";
 import SectionTitle from "../SectionTitle";
 
 const PetSection = () => {

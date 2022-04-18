@@ -43,4 +43,35 @@ const dogs = [
   },
 ];
 
-export default dogs;
+const support_cards = [
+  {
+    id: 1,
+    title: "Make donation",
+    kind: "right",
+    img_type: "/assets/make-donation-logo.png",
+    img_bg: "/assets/make-donation.png",
+  },
+  {
+    id: 2,
+    title: "Take home",
+    kind: "right",
+    img_type: "/assets/take-home-logo.png",
+    img_bg: "/assets/take-home.png",
+  },
+  {
+    id: 3,
+    title: "Become a volunteer",
+    kind: "left",
+    img_type: "/assets/become-a-volunteer-logo.png",
+    img_bg: "/assets/become-a-volunteer.png",
+  },
+  {
+    id: 4,
+    title: "Bring food",
+    kind: "left",
+    img_type: "/assets/bring-food-logo.png",
+    img_bg: "/assets/bring-food.png",
+  },
+];
+
+export { dogs, support_cards };
