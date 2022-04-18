@@ -9,8 +9,10 @@ const SupportSection = () => {
   return (
     <div className={[styles.support_section, "bg-darklight"].join(" ")}>
       <SectionTitle isBackgroundReversed>Support us</SectionTitle>
-      <div>
-        <SupportCard {...support_cards[0]} />
+      <div className={styles.cards}>
+        {support_cards.map((item) => (
+          <SupportCard key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );
