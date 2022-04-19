@@ -1,5 +1,6 @@
+@import "../../styles/abstracts/mixins";
 .support_section {
-  display: flex;
+  @include flex(0);
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -7,9 +8,9 @@
   .cards {
     margin-top: 3rem;
     padding-inline: 1rem;
-    display: flex;
+
+    @include flex(3rem);
     justify-content: center;
-    gap: 3rem;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -17,14 +18,17 @@
 
 .support_card {
   padding: 1em;
+
   width: 415px;
   height: 150px;
+
   border-radius: 63px;
-  background-color: white;
+
+  background-color: var(--clr-light);
   background-size: 70%;
   background-repeat: no-repeat;
 
-  display: flex;
+  @include flex(0);
   justify-content: space-around;
   align-items: center;
 
@@ -42,7 +46,7 @@
   p {
     font-family: var(--ff-serif);
     font-size: var(--fs-700);
-    letter-spacing: 5%;
+    letter-spacing: var(--letter-spacing-1);
     flex-basis: 30%;
     text-align: center;
   }

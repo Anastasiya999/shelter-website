@@ -7,7 +7,7 @@ import { support_cards } from "../../data";
 
 const SupportSection = () => {
   return (
-    <div className={[styles.support_section, "bg-darklight"].join(" ")}>
+    <div className={styles.support_section}>
       <SectionTitle isBackgroundReversed>Support us</SectionTitle>
       <div className={styles.cards}>
         {support_cards.map((item) => (
