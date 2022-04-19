@@ -13,15 +13,10 @@ const HeroSection = () => {
       </div>
       <div className={styles.hero}>
         <div className={styles.hero_description}>
-          <p className="ff-cursive fs-900 letter-spacing-1 uppercase">
+          <p>
             find new <br /> friend
           </p>
-          <p
-            className={[
-              "fw-regular ff-serif fs-600",
-              styles.hero_description_main,
-            ].join(" ")}
-          >
+          <p>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
