@@ -6,7 +6,7 @@ import SectionTitle from "../SectionTitle";
 
 const PetSection = () => {
   return (
-    <div className={[styles.pet_section, "bg-darklight"].join(" ")}>
+    <div className={styles.pet_section}>
       <SectionTitle>Our friends</SectionTitle>
       <CustomSlider data={dogs} />
       <div className={styles.link}>
