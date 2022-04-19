@@ -25,13 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={[
-        "flex",
-        "fs-600",
-        "ff-serif",
-        styles.nav,
-        navbarOpacity ? styles.nav_active : "",
-      ].join(" ")}
+      className={[styles.nav, navbarOpacity ? styles.nav_active : ""].join(" ")}
     >
       <NavLogo />
       <NavMenu isNavExpanded={isNavExpanded} />

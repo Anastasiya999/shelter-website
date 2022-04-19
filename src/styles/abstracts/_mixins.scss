@@ -5,9 +5,9 @@
   #{$color}-l: #{$lightness};
 }
 
-@mixin flex() {
+@mixin flex($gap_size: 1rem) {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, $gap_size);
 }
 
 @mixin container() {
