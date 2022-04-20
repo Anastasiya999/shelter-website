@@ -79,8 +79,8 @@
   border: none;
   border-radius: 173px;
 
-  width: 148px;
-  height: 49px;
+  min-width: 148px;
+  min-height: 49px;
 
   align-self: start;
 
@@ -88,12 +88,13 @@
   font-size: var(--fs-500);
   font-weight: 700;
   color: black;
-
-  &:hover {
-    cursor: pointer;
-    filter: drop-shadow(2px 4px 0px rgba(157, 101, 1, 1));
-    transform: translateY(-3%);
-    transition: all 0.2s;
+  @media (min-width: 35rem) {
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(2px 4px 0px rgba(157, 101, 1, 1));
+      transform: translateY(-3%);
+      transition: all 0.2s;
+    }
   }
 }
 
