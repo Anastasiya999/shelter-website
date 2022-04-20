@@ -2,7 +2,7 @@
 
 .hero_img {
   @include flex();
-  flex-direction: column;
+  flex-direction: row;
   align-items: end;
   justify-content: center;
 
