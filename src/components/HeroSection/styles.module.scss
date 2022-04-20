@@ -5,8 +5,9 @@
   flex-direction: row;
 
   justify-content: end;
+  -webkit-justify-content: flex-end;
 
-  max-width: 70vw;
+  max-width: 80vw;
   min-height: 50vh;
 
   img {
