@@ -16,8 +16,7 @@ const CustomSlider = ({ data }) => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    nextArrow: <Arrow type="next" />,
-    prevArrow: <Arrow type="prev" />,
+
     responsive: [
       {
         breakpoint: 1024,

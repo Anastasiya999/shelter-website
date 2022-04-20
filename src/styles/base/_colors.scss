@@ -4,3 +4,16 @@
 .bg-darklight {
   background-color: alpha(var(--clr-dark-light), 1);
 }
+
+:root {
+  /*colors*/
+  @include defineColorHSL(--clr-primary, 39, 99%, 66%);
+  @include defineColorHSL(--clr-secondary-lightblue, 199, 39%, 73%);
+  @include defineColorHSL(--clr-secondary-blue, 226, 58%, 73%);
+  @include defineColorHSL(--clr-secondary-red, 8, 75%, 69%);
+
+  @include defineColorHSL(--clr-light, 0, 0%, 100%);
+  @include defineColorHSL(--clr-dark-light, 0, 0%, 95%);
+  @include defineColorHSL(--clr-dark, 0, 0%, 17%);
+  @include defineColorHSL(--clr-dark-dark, 0, 0%, 10%);
+}
