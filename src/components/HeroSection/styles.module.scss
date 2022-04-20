@@ -3,17 +3,17 @@
 .hero_img {
   @include flex();
   flex-direction: row;
-  align-items: end;
-  justify-content: center;
 
-  max-width: 70vw;
+  justify-content: end;
+
+  max-width: 80vw;
   min-height: 50vh;
 
   img {
     display: block;
     width: 70%;
     height: auto;
-    align-self: end;
+    align-self: center;
   }
 }
 
