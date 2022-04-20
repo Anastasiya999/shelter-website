@@ -4,15 +4,15 @@
   @include flex();
   flex-direction: column;
   align-items: end;
-  justify-content: end;
+  justify-content: center;
 
-  max-width: 100vw;
   min-height: 50vh;
 
   img {
     display: block;
     width: 70%;
     height: auto;
+    align-self: end;
   }
 }
 
