@@ -78,4 +78,9 @@ const support_cards = [
   },
 ];
 
-export { dogs, support_cards };
+const footer_info = [
+  { id: 1, title: "Contact", info: ["email@shelter.com", "+13 674 567 75 54"] },
+  { id: 2, title: "Social", info: "links" },
+  { id: 3, title: "Location", info: "London, South Park, 18st" },
+];
+export { dogs, support_cards, footer_info };

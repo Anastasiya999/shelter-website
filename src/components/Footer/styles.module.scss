@@ -1,0 +1,48 @@
+.footer {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+
+  img {
+    width: 90vw;
+    border-radius: 35px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  font-family: var(--ff-serif);
+
+  h1 {
+    font-size: var(--fs-600);
+    letter-spacing: 3px;
+  }
+
+  p {
+    margin-top: 1em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 58rem) {
+  .footer {
+    padding: 2rem 0;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: 35vh;
+      width: auto;
+    }
+  }
+
+  .info {
+    flex-direction: row;
+  }
+}
